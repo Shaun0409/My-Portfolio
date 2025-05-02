@@ -1,0 +1,201 @@
+
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgba(0, 0, 0, 0.952);
+  color: white;
+  
+}
+
+.homepage {
+  padding: 20px;
+  background-color: #000000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  gap: 2px;
+}
+
+.glow, .glow-heart {
+  animation: glowText 1.8s ease-in-out infinite;
+  color: white;
+  text-shadow: 0 0 5px orange, 0 0 10px orange, 0 0 15px orange;
+}
+
+@keyframes glowText {
+  0% {
+    opacity: 0.3;
+    text-shadow: none;
+  }
+  50% {
+    opacity: 1;
+    text-shadow: 0 0 5px orange, 0 0 10px orange, 0 0 20px orange;
+  }
+  100% {
+    opacity: 0.3;
+    text-shadow: none;
+  }
+}
+
+
+.nav_links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  font-size: larger;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.nav_links li {
+  cursor: pointer;
+  color: #ccc;
+}
+
+.nav_links li:hover {
+  color: #ff4500;
+  
+}
+
+.hire_btn {
+  background-color: #ff7f00;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.main_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3px;
+  width: 100%;
+  max-width: 1200px; 
+  margin-left: auto;  
+  margin-right: auto;
+  margin: 40px;
+}
+
+.text_section {
+  max-width: 60%;
+  margin-left: 30px;
+  
+}
+.greeting {
+  color: #8d8a8a;
+  font-size: 20px;
+  font-style: italic; font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.name {
+  color: #ccc;
+  font-style: italic; font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.title {
+  font-size: 50px;
+  font-style: italic; font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #ff7f00;
+}
+
+.buttons {
+  display: flex;
+  gap: 16px;
+  margin-top: 20px;
+ 
+}
+
+.hire_me,
+.downloadcv {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  border: 2px solid orange;
+  border-radius: 10px;
+  background-color: white;
+  color: orange;
+  cursor: pointer;
+  transition: all 0.3s ease;
+ 
+}
+
+.hire_me:hover,
+.downloadcv:hover {
+  background-color: orange;
+  color: white;
+  transform: scale(1.05);
+}
+
+.social_icons {
+  margin-top: 20px;
+  display: flexbox;
+  gap: 25px;
+  justify-content: center; 
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0); 
+  }
+  40% {
+    transform: translateY(-12px);
+  }
+  60% {
+    transform: translateY(-6px);
+  }
+}
+
+.social_icons img {
+  width: 60px;
+  height: 60px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  animation: bounce 2s infinite;
+  transition: transform 0.3s ease;
+}
+
+.social_icons img:hover {
+  transform: scale(1.2);
+}
+
+
+
+
+.image_section {
+  max-width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.profile_image {
+  width: 500px;
+  height: 450px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  border: 8px solid rgb(255, 166, 0); 
+  box-shadow: 0 0 20px rgb(255, 166, 0); 
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}

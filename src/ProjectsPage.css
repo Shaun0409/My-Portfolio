@@ -1,0 +1,135 @@
+.projects-page {
+  background-color: #0a0a0a;
+  color: #ffffff;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.projects-title {
+  font-size: 25px;
+  margin-bottom: 2rem;
+  color: #ff6b00; 
+}
+
+.projects-filters {
+  margin-bottom: 2.5rem;
+}
+
+.filter-btn {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #ff6b00;
+  padding: 0.5rem 1rem;
+  margin: 0.3rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background-color: #ff6b00;
+  color: #0a0a0a;
+  box-shadow: 0 0 10px #ff6b00;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  padding: 0 2rem;
+}
+
+.project-card {
+  background-color: #111;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+}
+
+.slider {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  background-color: #000;
+}
+
+
+
+.project-img {
+  width: 100%;
+  height: auto;
+  object-fit: contain; 
+  background-color: #000; 
+}
+
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 107, 0, 0.8);
+  border: none;
+  color: #000;
+  font-size: 1.2rem;
+  padding: 0.2rem 0.7rem;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 1;
+  transition: background 0.3s ease;
+}
+
+.slider-btn:hover {
+  background-color: #ff6b00;
+  box-shadow: 0 0 10px #ff6b00;
+}
+
+.slider-btn.prev {
+  left: 10px;
+}
+
+.slider-btn.next {
+  right: 10px;
+}
+
+.project-info {
+  padding: 1rem;
+}
+
+.project-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.project-category {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+.project-link {
+  background-color: #ff6b00;
+  color: #0a0a0a;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.project-link:hover {
+  box-shadow: 0 0 8px #ff6b00;
+  background-color: #fff;
+  color: #ff6b00;
+}
