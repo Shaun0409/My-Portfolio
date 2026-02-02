@@ -1,14 +1,20 @@
 import React, { useRef } from 'react';
-import './HomePage.css';
-import AboutMe from './AboutMe';
-import SkillsPage from './SkillsPage';
-import ServicesPage from './ServicesPage';
-import ProjectsPage from './ProjectsPage';
-import ContactPage from './ContactPage';
+import '../Styles/HomePage.css';
+import AboutMe from '../Components/AboutMe';
+import SkillsPage from '../Components/SkillsPage';
+import ServicesPage from '../Components/ServicesPage';
+import ProjectsPage from '../Components/ProjectsPage';
+import ContactPage from '../Components/ContactPage';
+import profile2Image from '../Assets/profile2.jpg';
+import facebookIcon from '../Assets/facebook.png';
+import instagramIcon from '../Assets/instagram.png';
+import cvFile from '../Assets/Shaun_CV.pdf';
+
 
 
 
 const HomePage = () => {
+  
   const aboutRef = useRef(null);
   const skillsRef = useRef(null);
   const servicesRef = useRef(null);
@@ -21,7 +27,6 @@ const HomePage = () => {
 
   return (
     <div className="homepage">
-      {/* Navbar */}
       <div className="navbar">
       <div className="logo">
   <span className="glow" style={{ animationDelay: '0s' }}>S</span>
@@ -29,7 +34,7 @@ const HomePage = () => {
   <span className="glow" style={{ animationDelay: '0.4s' }}>A</span>
   <span className="glow" style={{ animationDelay: '0.6s' }}>U</span>
   <span className="glow" style={{ animationDelay: '0.8s' }}>N</span>
-  <span className="glow-heart" style={{ animationDelay: '1s' }}>👍</span>
+  <span className="glow-emoji" style={{ animationDelay: '1s' }}>👍</span>
 </div>
 
         <ul className="nav_links">
@@ -41,7 +46,7 @@ const HomePage = () => {
           <li onClick={() => scrollToSection(contactRef)}>Contact me</li>
         </ul>
         
-        <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/shaun-tshabalala-7ab5812b4" target="_blank" rel="noopener noreferrer">
           <button className="hire_btn">Hire Me</button>
         </a>
 
@@ -57,13 +62,13 @@ const HomePage = () => {
           
           <div className="buttons">
             <a
-              href="https://www.linkedin.com/in/your-profile"
+              href="https://www.linkedin.com/in/shaun-tshabalala-7ab5812b4"
               target="_blank"
               rel="noopener noreferrer">
 
         <button className="hire_me">Hire Me</button>
         </a>
-        <a href="/Shaun_CV.docx" download>
+        <a href={cvFile} download>
         <button className="downloadcv">Download CV</button>
         </a>
 
@@ -72,19 +77,18 @@ const HomePage = () => {
 
    <div className="social_icons">
            <a href="https://www.facebook.com/share/14noTXwGN1/">
-              <img src="/facebook.png" alt="Facebook" />
+              <img src={facebookIcon} alt="Facebook" />
            </a>
 
           <a href="https://instagram.com/shaun_draga_ii">
-            <img src="/instagram.png" alt="Instagram" />
+            <img src={instagramIcon} alt="Instagram" />
           </a>
     </div>
 
         </div>
         <div className="image_section">
           <img
-            src="/profile.jpg" 
-            alt="Profile"
+            src={profile2Image} alt="Profile"
             className="profile_image"
           />
         </div>

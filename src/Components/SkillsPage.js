@@ -1,6 +1,6 @@
-// SkillsPage.js
 import React from 'react';
-import './SkillsPage.css';
+import '../Styles/SkillsPage.css';
+
 
 const SkillsPage = () => {
   return (

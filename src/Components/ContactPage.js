@@ -1,6 +1,11 @@
 
 import React from 'react';
-import './ContactPage.css';
+import '../Styles/ContactPage.css';
+import githubicon from '../Assets/github.png';
+import linkedinicon from '../Assets/linkedin.jpeg';
+import facebookicon from '../Assets/facebook.png';
+import instagramicon from '../Assets/instagram.png';
+
 
 const ContactPage = () => {
   return (
@@ -29,6 +34,7 @@ const ContactPage = () => {
       <footer className="footer">
       
         <ul className="footer_links">
+          
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About me</a></li>
           <li><a href="#skills">Skills</a></li>
@@ -39,19 +45,19 @@ const ContactPage = () => {
 
         <div className="footer_socials">
         <a href="https://github.com/Shaun0409" target="_blank" rel="noopener noreferrer">
-         <img src="/github.png" alt="GitHub" className="social_icon" />
+         <img src={githubicon} alt="GitHub" className="social_icon" />
         </a>
 
         <a href="https://www.linkedin.com/in/shaun-tshabalala-7ab5812b4/" target="_blank" rel="noopener noreferrer">
-         <img src="linkedin.png" alt="LinkedIn" className="social_icon" />
+         <img src={linkedinicon} alt="LinkedIn" className="social_icon" />
         </a>
 
          <a href="https://www.facebook.com/share/14noTXwGN1/" target="_blank" rel="noopener noreferrer">
-          <img src="/facebook.png" alt="Facebook" className="social_icon" />
+          <img src={facebookicon} alt="Facebook" className="social_icon" />
          </a>
 
          <a href="https://instagram.com/shaun_draga_ii" target="_blank" rel="noopener noreferrer">
-           <img src="/instagram.png" alt="Instagram" className="social_icon" />
+           <img src={instagramicon} alt="Instagram" className="social_icon" />
          </a>
 
        </div>

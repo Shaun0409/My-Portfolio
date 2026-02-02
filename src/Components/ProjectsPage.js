@@ -1,13 +1,12 @@
-// ProjectsPage.js
 import React, { useState } from 'react';
-import './ProjectsPage.css';
+import '../Styles/ProjectsPage.css';
 
 const allProjects = [
   {
     title: 'My Portfolio',
     category: 'Website Design',
     images: ['/HomePage.png', '/AboutPage.png', '/SkillsPage.png'],
-    link: 'https://your-live-site-url.netlify.app',
+    link: 'https://shaun-tshabalala-portfolio.netlify.app/',
   },
   
   

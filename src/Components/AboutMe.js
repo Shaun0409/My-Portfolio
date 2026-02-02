@@ -1,5 +1,8 @@
 import React from 'react';
-import './AboutMe.css';
+import '../Styles/AboutMe.css';
+import profile2Image from '../Assets/profile2.jpg';
+import cvFile from '../Assets/Shaun_CV.pdf';
+
 
 
 const AboutMe = () => {
@@ -9,7 +12,7 @@ const AboutMe = () => {
       <div className="about_content">
         <div className="about_image">
         <img
-            src="/profile.jpg" 
+            src={profile2Image}
             alt="Profile"
             className="profile_image"
           />
@@ -27,7 +30,7 @@ const AboutMe = () => {
           
 
           <button className="download_btn">        
-          <a href="/Shaun_CV.docx" download className="download_cv">Download Cv</a>
+          <a href={cvFile} download className="download_cv">Download Cv</a>
           </button>
 
         </div>
