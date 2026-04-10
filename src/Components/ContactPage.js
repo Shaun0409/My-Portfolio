@@ -6,12 +6,11 @@ import linkedinicon from '../Assets/linkedin.jpeg';
 import facebookicon from '../Assets/facebook.png';
 import instagramicon from '../Assets/instagram.png';
 
-
 const ContactPage = () => {
   return (
     <div id="contact" className="contact_page">
-      <h2>Contact Me</h2>
-      <p className="subtitle">Reach Out And Connect With Me</p>
+      <h2>Get In Touch</h2>
+      <p className="subtitle">Let's discuss your next project or opportunity. I'm excited to collaborate!</p>
 
       <form
         className="contact_form"
@@ -22,8 +21,10 @@ const ContactPage = () => {
         <input name="email" type="email" placeholder="Email" required />
         <input name="phone" type="text" placeholder="Phone Number" />
         <select name="service">
-          <option value="">Service Of Interest</option>
-          <option value="web">Web Design</option>
+          <option value="">Role of Interest</option>
+          <option value="frontend">Frontend Developer</option>
+          <option value="fullstack">Full-Stack Developer</option>
+          <option value="intern">Internship/Entry-Level</option>
         </select>
         <input name="timeline" type="text" placeholder="Timeline" />
         <textarea name="details" placeholder="Project Details..." rows={5}></textarea>
@@ -43,10 +44,13 @@ const ContactPage = () => {
           <li><a href="#contact">Contact me</a></li>
         </ul>
 
+      
+
         <div className="footer_socials">
         <a href="https://github.com/Shaun0409" target="_blank" rel="noopener noreferrer">
          <img src={githubicon} alt="GitHub" className="social_icon" />
         </a>
+
 
         <a href="https://www.linkedin.com/in/shaun-tshabalala-7ab5812b4/" target="_blank" rel="noopener noreferrer">
          <img src={linkedinicon} alt="LinkedIn" className="social_icon" />
@@ -64,10 +68,16 @@ const ContactPage = () => {
 
 
         <div className="footer_contact">
-          <p><i className="email"></i> Shaundraga4@gmail.com</p>
-          <p><i className="phone"></i> +27 81 238 8795</p>
+          <p className="footer-email">
+            <i className="email"></i>
+            <a href="mailto:Shaundraga4@gmail.com">Shaundraga4@gmail.com</a>
+          </p>
+          <p className="footer-phone">
+            <i className="phone"></i>
+            <a href="tel:+27812388795">+27 81 238 8795</a>
+          </p>
         </div>
-        <p className="footer_bottom">Designed by @Shaun Software Developer</p>
+        <p className="footer_bottom">&copy; 2025 Shaun Tshabalala. Built with React. Open to opportunities.</p>
       </footer>
     </div>
   );

@@ -98,6 +98,19 @@
   margin-right: 6px;
 }
 
+.footer-email a,
+.footer-phone a {
+  color: #ff6b00;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-email a:hover,
+.footer-phone a:hover {
+  color: #fff;
+  text-shadow: 0 0 5px #ff6b00;
+}
+
 .footer_bottom {
   margin-top: 20px;
   font-size: 12px;

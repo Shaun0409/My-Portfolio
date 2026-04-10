@@ -11,31 +11,60 @@ const SkillsPage = () => {
       </p>
 
       <div className="skills-container">
-        <div className="skills-card">
-          <h3>Technical Skills</h3>
-          <ul>
-            <li>HTML - Intermediate</li>
-            <li>CSS - Intermediate</li>
-            <li>JavaScript - Intermediate</li>
-            <li>React - Basic</li>
-            <li>C# - Intermediate</li>
-            <li>SQL - Intermediate</li>
-            <li>Figma - Good</li>
-          </ul>
+        <div className="skills-category">
+          <h3>Frontend</h3>
+          <div className="skill-bar">
+            <span>React</span>
+            <div className="progress" style={{width: '80%'}}></div>
+          </div>
+          <div className="skill-bar">
+            <span>JavaScript</span>
+            <div className="progress" style={{width: '75%'}}></div>
+          </div>
+          <div className="skill-bar">
+            <span>HTML/CSS</span>
+            <div className="progress" style={{width: '85%'}}></div>
+          </div>
         </div>
 
-        <div className="skills-arrow">⇄</div>
+        <div className="skills-category">
+          <h3>Backend & Data</h3>
+          <div className="skill-bar">
+            <span>Python</span>
+            <div className="progress" style={{width: '85%'}}></div>
+          </div>
+          <div className="skill-bar">
+            <span>C#</span>
+            <div className="progress" style={{width: '70%'}}></div>
+          </div>
+          <div className="skill-bar">
+            <span>SQL</span>
+            <div className="progress" style={{width: '75%'}}></div>
+          </div>
+        </div>
 
-        <div className="skills-card">
+        <div className="skills-category">
+          <h3>Tools</h3>
+          <div className="skill-bar">
+            <span>Git/GitHub</span>
+            <div className="progress" style={{width: '80%'}}></div>
+          </div>
+          <div className="skill-bar">
+            <span>Figma</span>
+            <div className="progress" style={{width: '70%'}}></div>
+          </div>
+        </div>
+
+        <div className="skills-category">
           <h3>Soft Skills</h3>
-          <ul>
-            <li>Communication - Good</li>
-            <li>Teamwork - Proficient</li>
-            <li>Adaptability - High</li>
-            <li>Time Management - Strong</li>
-            <li>Critical Thinking - Advanced</li>
-            <li>Empathy - High</li>
-          </ul>
+          <div className="skill-bar">
+            <span>Problem Solving</span>
+            <div className="progress" style={{width: '90%'}}></div>
+          </div>
+          <div className="skill-bar">
+            <span>Agile/Teamwork</span>
+            <div className="progress" style={{width: '85%'}}></div>
+          </div>
         </div>
       </div>
     </div>

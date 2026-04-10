@@ -5,10 +5,12 @@ import SkillsPage from '../Components/SkillsPage';
 import ServicesPage from '../Components/ServicesPage';
 import ProjectsPage from '../Components/ProjectsPage';
 import ContactPage from '../Components/ContactPage';
+import Experience from '../Components/Experience';
 import profile2Image from '../Assets/profile2.jpg';
 import facebookIcon from '../Assets/facebook.png';
 import instagramIcon from '../Assets/instagram.png';
 import cvFile from '../Assets/Shaun_CV.pdf';
+
 
 
 
@@ -18,12 +20,14 @@ const HomePage = () => {
   const aboutRef = useRef(null);
   const skillsRef = useRef(null);
   const servicesRef = useRef(null);
+  const experienceRef = useRef(null);
   const projectRef = useRef(null);
   const contactRef = useRef(null);
 
   const scrollToSection = (ref) => {
     ref.current?.scrollIntoView({ behavior: 'smooth' });
   };
+
 
   return (
     <div className="homepage">
@@ -41,10 +45,11 @@ const HomePage = () => {
           <li onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="active">Home</li>
           <li onClick={() => scrollToSection(aboutRef)}>About me</li>
           <li onClick={() => scrollToSection(skillsRef)}>Skills</li>
-          <li onClick={() => scrollToSection(servicesRef)}>Services</li>
+          <li onClick={() => scrollToSection(experienceRef)}>Experience</li>
           <li onClick={() => scrollToSection(projectRef)}>Projects</li>
-          <li onClick={() => scrollToSection(contactRef)}>Contact me</li>
+          <li onClick={() => scrollToSection(contactRef)}>Contact</li>
         </ul>
+
         
         <a href="https://www.linkedin.com/in/shaun-tshabalala-7ab5812b4" target="_blank" rel="noopener noreferrer">
           <button className="hire_btn">Hire Me</button>
@@ -56,18 +61,15 @@ const HomePage = () => {
       <div className="main_content">
         <div className="text_section">
 
-          <p className="greeting">Hi I am</p>
-          <h2 className="name">Shaun Tshabalala</h2>
-          <h1 className="title">Software Developer</h1>
+          <p className="greeting">Junior Software Developer</p>
+          <h1 className="name">Shaun Tshabalala</h1>
+          <h2 className="title">React | Python | Full-Stack</h2>
+          <p className="summary">CVTS IT Intern with hands-on experience in React, Python/Streamlit, API integrations, automation, and full-stack web app development, building scalable web apps and dashboards.</p>
           
           <div className="buttons">
-            <a
-              href="https://www.linkedin.com/in/shaun-tshabalala-7ab5812b4"
-              target="_blank"
-              rel="noopener noreferrer">
-
-        <button className="hire_me">Hire Me</button>
-        </a>
+            <a href="#projects" className="scroll-link">
+              <button className="view_projects">View Projects</button>
+            </a>
         <a href={cvFile} download>
         <button className="downloadcv">Download CV</button>
         </a>
@@ -104,6 +106,10 @@ const HomePage = () => {
 
       <div ref={servicesRef}>
         <ServicesPage/>
+      </div>
+
+      <div ref={experienceRef}>
+        <Experience />
       </div>
 
       <div ref={projectRef}>
