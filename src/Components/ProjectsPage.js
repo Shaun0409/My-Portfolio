@@ -38,7 +38,6 @@ const allProjects = [
     category: 'Website',
     description: 'Professional business website for mining company.',
     tech: 'HTML, CSS',
-    github: 'https://github.com/Shaun0409/geominerals',
     images: ['/images/GeoHome.png', '/images/GeoAbout.png'],
     link: 'https://geominerals.co.za'
   },
@@ -47,7 +46,6 @@ const allProjects = [
     category: 'Website',
     description: 'Professional business website for mining company.',
     tech: 'HTML, CSS',
-    github: 'https://github.com/Shaun0409/geominerals',
     images: ['/images/ExcoHome.png', '/images/Exco1.png'],
     link: 'https://mineralexco.co.za'
   },
@@ -56,7 +54,6 @@ const allProjects = [
     category: 'Website',
     description: 'Personal React developer portfolio with interactive features.',
     tech: 'React, Html, CSS',
-    github: 'https://github.com/Shaun0409/portfolio',
     images: ['/images/HomePage.png', '/images/AboutPage.png', '/images/SkillsPage.png'],
     link: 'https://shaun-tshabalala-portfolio.netlify.app/'
   }
